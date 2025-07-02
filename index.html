@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #1e1e2f;
+      color: #f2f2f2;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #282c34;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .dashboard {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+    .env-card {
+      background-color: #2c2f3a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .env-card h2 {
+      margin-bottom: 1rem;
+    }
+    .buttons button {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .deploy {
+      background-color: #4caf50;
+      color: white;
+    }
+    .rollback {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>🚀 DevOps Deployment Dashboard</header>
+
+<div class="dashboard">
+  <div class="env-card">
+    <h2>Development</h2>
+    <p>Status: ✅ Running</p>
+    <div class="buttons">
+      <button class="deploy">Deploy</button>
+      <button class="rollback">Rollback</button>
+    </div>
+  </div>
+  <div class="env-card">
+    <h2>Staging</h2>
+    <p>Status: ⚠️ Pending</p>
+    <div class="buttons">
+      <button class="deploy">Deploy</button>
+      <button class="rollback">Rollback</button>
+    </div>
+  </div>
+  <div class="env-card">
+    <h2>Production</h2>
+    <p>Status: 🛠️ Updating</p>
+    <div class="buttons">
+      <button class="deploy">Deploy</button>
+      <button class="rollback">Rollback</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
 
